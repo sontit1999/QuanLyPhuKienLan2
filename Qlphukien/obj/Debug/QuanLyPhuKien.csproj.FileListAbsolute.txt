@@ -1,0 +1,34 @@
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\bin\Debug\Qlphukien.exe.config
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\bin\Debug\Qlphukien.exe
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\bin\Debug\Qlphukien.pdb
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\bin\Debug\System.Collections.NonGeneric.dll
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csprojAssemblyReference.cache
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.Form1.resources
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.MenuForm.resources
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.Properties.Resources.resources
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLnhanvien.resources
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLSanPham.resources
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.GenerateResource.cache
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.CoreCompileInputs.cache
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.CopyComplete
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.exe
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.pdb
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLLoaiSanPham.resources
+D:\Đồ Án 1\Do An\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLHoaDon.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\bin\Debug\Qlphukien.exe.config
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\bin\Debug\Qlphukien.exe
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\bin\Debug\Qlphukien.pdb
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\bin\Debug\System.Collections.NonGeneric.dll
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csprojAssemblyReference.cache
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.Form1.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.MenuForm.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.Properties.Resources.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLHoaDon.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLLoaiSanPham.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLNhanVien.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.QLSanPham.resources
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.GenerateResource.cache
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.CoreCompileInputs.cache
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.CopyComplete
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.exe
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.pdb
