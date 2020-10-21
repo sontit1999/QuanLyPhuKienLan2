@@ -230,5 +230,18 @@ namespace Qlphukien
             }
             disPlayListToGDV(dgvDSSP, list);
         }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTuKhoa.Text;
+            if (keyword.Equals(""))
+            {
+                MessageBox.Show("Phải nhập nội dung vào ô tìm kiếm( tên sp/mo ta )");
+            }
+            else
+            {
+                displayHD(dgvHoaDon, hdDao.SearchHD(keyword));
+            }
+        }
     }
 }

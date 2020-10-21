@@ -85,5 +85,25 @@ namespace Qlphukien.DAO
             con.Close();
             return true;
         }
+        public List<HoaDon> SearchHD(string keyword)
+        {
+            List<HoaDon> list = new List<HoaDon>();
+            HoaDon hoadon = null;
+            con.Open();
+            string sql = "select * from HoaDon where MaHoaDon in ( select MaHoaDon from ChiTiet_HoaDon where MaSanPham in ((select MaSanPham from SanPham where TenSanPham like N'%" + keyword+ "%' or MoTa like N'%" + keyword + "%')))";
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+
+                hoadon = new HoaDon(dr["MaHoaDon"].ToString(), dr["MaNhanVien"].ToString(), dr["NgayLap"].ToString(), Convert.ToInt32(dr["TongTienHoaDon"]));
+                list.Add(hoadon);
+            }
+            con.Close();
+            return list;
+           
+        }
     }
 }

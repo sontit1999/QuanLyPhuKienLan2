@@ -40,18 +40,18 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnRefreshHD = new System.Windows.Forms.Button();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dgvDSSP = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cbSanPham = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvDSSP = new System.Windows.Forms.DataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cbSanPham = new System.Windows.Forms.ComboBox();
             this.BtnAddSPtoHoaDon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSP)).BeginInit();
@@ -118,6 +118,7 @@
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // btnXoa
             // 
@@ -183,6 +184,30 @@
             this.dgvHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellClick);
             this.dgvHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Mã hóa đơn";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 120;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Tên nhân viên";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 120;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Ngày lập";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 120;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Tổng tiền";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 120;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -205,6 +230,24 @@
             this.dgvDSSP.Name = "dgvDSSP";
             this.dgvDSSP.Size = new System.Drawing.Size(527, 173);
             this.dgvDSSP.TabIndex = 56;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Tên sản phẩm";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 250;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Số lượng";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 120;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Tiền phải trả";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 120;
             // 
             // label5
             // 
@@ -235,48 +278,6 @@
             this.cbSanPham.Size = new System.Drawing.Size(140, 21);
             this.cbSanPham.TabIndex = 63;
             this.cbSanPham.SelectedIndexChanged += new System.EventHandler(this.cbSanPham_SelectedIndexChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã hóa đơn";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 120;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên nhân viên";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 120;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Ngày lập";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 120;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Tổng tiền";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 120;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Tên sản phẩm";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 250;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Số lượng";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 120;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Tiền phải trả";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 120;
             // 
             // BtnAddSPtoHoaDon
             // 
