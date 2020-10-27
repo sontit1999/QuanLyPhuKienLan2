@@ -89,7 +89,7 @@ namespace Qlphukien
                         if (qlhoadon != null)
                         {
                             qlhoadon.reFreshComboboxSanPham();
-                            this.Close();
+                            //this.Close();
                         }
                     }
                     else

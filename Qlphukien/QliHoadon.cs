@@ -21,9 +21,12 @@ namespace Qlphukien
         SanPhamDao spDao = new SanPhamDao();
         NhanVienDao nvDao = new NhanVienDao();
         string mahdSelected = null;
+        int indexSanPhamSelected = -5;
         public QLHoaDon()
         {
             InitializeComponent();
+            btnCapnhat.Hide();
+            btnXoa.Hide();
         }
 
         private void QliHoadon_Load(object sender, EventArgs e)
@@ -160,10 +163,13 @@ namespace Qlphukien
                 {
                     ChiTietHoaDon cthd = new ChiTietHoaDon(mahd, item.MaSP, item.SoLuong, item.SoLuong * item.GiaNhap);
                     cthd.MaCTHD = "CTHD" + rnd.Next(1, 50000);
+                    spDao.UpdateSLSanPham(item.MaSP, item.SoLuong);
                     ChiTietHoaDonDAO.AddCTHoaDon(cthd);
                 }
 
                 displayHD(dgvHoaDon, hdDao.getAllHD());
+                list.Clear();
+                disPlayListToGDV(dgvDSSP, list); 
                 MessageBox.Show("thêm hóa đơn Thành công ");
             }
         }
@@ -242,6 +248,34 @@ namespace Qlphukien
             {
                 displayHD(dgvHoaDon, hdDao.SearchHD(keyword));
             }
+        }
+
+        private void dgvDSSP_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexSanPhamSelected = e.RowIndex;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(indexSanPhamSelected>=0 && indexSanPhamSelected < list.Count)
+            {
+                list.RemoveAt(indexSanPhamSelected);
+                disPlayListToGDV(dgvDSSP, list);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (indexSanPhamSelected >= 0 && indexSanPhamSelected < list.Count)
+            {
+                list[indexSanPhamSelected].SoLuong = Convert.ToInt32(txtSoluong.Text);
+                disPlayListToGDV(dgvDSSP, list);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            disPlayListToGDV(dgvDSSP, list);
         }
     }
 }

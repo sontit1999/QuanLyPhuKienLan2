@@ -193,5 +193,17 @@ namespace Qlphukien.DAO
             con.Close();
             return name;
         }
+        // update số lượng sản phẩm khi nhập hàng
+        public void UpdateSLSanPham(string masp,int sl)
+        {
+          
+            con.Open();
+            string sql = "update SanPham set SoLuong = SoLuong + "+ sl +" where MaSanPham = '" + masp +"'";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
+        
     }
 }

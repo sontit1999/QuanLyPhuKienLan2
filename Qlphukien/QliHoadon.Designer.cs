@@ -53,6 +53,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.cbSanPham = new System.Windows.Forms.ComboBox();
             this.BtnAddSPtoHoaDon = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSP)).BeginInit();
             this.SuspendLayout();
@@ -98,7 +101,7 @@
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(813, 417);
+            this.btnThoat.Location = new System.Drawing.Point(849, 365);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(128, 40);
             this.btnThoat.TabIndex = 47;
@@ -124,7 +127,7 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(813, 340);
+            this.btnXoa.Location = new System.Drawing.Point(600, 481);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(128, 38);
             this.btnXoa.TabIndex = 45;
@@ -137,7 +140,7 @@
             // 
             this.btnCapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnCapnhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapnhat.Image")));
-            this.btnCapnhat.Location = new System.Drawing.Point(615, 417);
+            this.btnCapnhat.Location = new System.Drawing.Point(600, 481);
             this.btnCapnhat.Name = "btnCapnhat";
             this.btnCapnhat.Size = new System.Drawing.Size(128, 38);
             this.btnCapnhat.TabIndex = 44;
@@ -149,11 +152,11 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.Location = new System.Drawing.Point(615, 340);
+            this.btnThem.Location = new System.Drawing.Point(627, 365);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(128, 38);
             this.btnThem.TabIndex = 43;
-            this.btnThem.Text = "Thêm";
+            this.btnThem.Text = "Thêm HD";
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -230,6 +233,7 @@
             this.dgvDSSP.Name = "dgvDSSP";
             this.dgvDSSP.Size = new System.Drawing.Size(527, 173);
             this.dgvDSSP.TabIndex = 56;
+            this.dgvDSSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSSP_CellClick);
             // 
             // Column6
             // 
@@ -262,11 +266,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(925, 127);
+            this.button1.Location = new System.Drawing.Point(908, 127);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 62;
-            this.button1.Text = "Thêm SP";
+            this.button1.Text = "Thêm SP mới";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -283,17 +287,51 @@
             // 
             this.BtnAddSPtoHoaDon.Location = new System.Drawing.Point(627, 224);
             this.BtnAddSPtoHoaDon.Name = "BtnAddSPtoHoaDon";
-            this.BtnAddSPtoHoaDon.Size = new System.Drawing.Size(263, 23);
+            this.BtnAddSPtoHoaDon.Size = new System.Drawing.Size(80, 23);
             this.BtnAddSPtoHoaDon.TabIndex = 64;
             this.BtnAddSPtoHoaDon.Text = "Thêm SP";
             this.BtnAddSPtoHoaDon.UseVisualStyleBackColor = true;
             this.BtnAddSPtoHoaDon.Click += new System.EventHandler(this.BtnAddSPtoHoaDon_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(750, 224);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 23);
+            this.button2.TabIndex = 65;
+            this.button2.Text = "Xóa sp";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(861, 224);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 23);
+            this.button3.TabIndex = 66;
+            this.button3.Text = "Cập nhật";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(504, 275);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(64, 40);
+            this.button4.TabIndex = 67;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // QLHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 531);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnAddSPtoHoaDon);
             this.Controls.Add(this.cbSanPham);
             this.Controls.Add(this.button1);
@@ -347,5 +385,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Button BtnAddSPtoHoaDon;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
