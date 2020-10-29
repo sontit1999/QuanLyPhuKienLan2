@@ -84,5 +84,11 @@ namespace Qlphukien
         {
             this.Close();
         }
+
+        private void btnThongke_Click(object sender, EventArgs e)
+        {
+            ThongKe tk = new ThongKe();
+            tk.Show();
+        }
     }
 }

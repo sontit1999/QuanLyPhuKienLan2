@@ -112,6 +112,7 @@
             this.btnThongke.Text = "Thống Kê";
             this.btnThongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnThongke.UseVisualStyleBackColor = true;
+            this.btnThongke.Click += new System.EventHandler(this.btnThongke_Click);
             // 
             // btnThoat
             // 

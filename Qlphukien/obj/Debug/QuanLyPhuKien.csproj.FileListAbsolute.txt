@@ -32,3 +32,4 @@ G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-ma
 G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\QuanLyPhuKien.csproj.CopyComplete
 G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.exe
 G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.pdb
+G:\code thuê\Quản lí nhập phụ kiện C# khangnguyen lần 2\QLphukien-master\Qlphukien\obj\Debug\Qlphukien.ThongKe.resources

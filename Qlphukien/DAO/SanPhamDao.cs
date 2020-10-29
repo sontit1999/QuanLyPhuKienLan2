@@ -204,6 +204,27 @@ namespace Qlphukien.DAO
             con.Close();
 
         }
-        
+        // hàm lấy tất cả sản phẩm nhập từ ngày a - b 
+        public List<SPTK> getAllSPNhap(string from,string to)
+        {
+            List<SPTK> list = new List<SPTK>();
+            NhanVienDao nvDao = new NhanVienDao();
+            SPTK SanPham = null;
+            con.Open();
+            string sql = "select TenSanPham,ChiTiet_HoaDon.SoLuong,GiaNhap,TienPhaiTra,MaNhanVien,NgayLap from HoaDon inner join ChiTiet_HoaDon on HoaDon.MaHoaDon = ChiTiet_HoaDon.MaHoaDon inner join SanPham on SanPham.MaSanPham = ChiTiet_HoaDon.MaSanPham where NgayLap > '"+  from   +"' and NgayLap< '" +to +"'";
+            SqlCommand cmd = new SqlCommand(sql, con);
+          
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                
+                SanPham = new SPTK(dr["TenSanPham"].ToString(), Convert.ToInt32(dr["SoLuong"]), Convert.ToInt32(dr["GiaNhap"]),Convert.ToInt32(dr["TienPhaiTra"]), dr["MaNhanVien"].ToString(), dr["NgayLap"].ToString());
+
+                list.Add(SanPham);
+            }
+            con.Close();
+            return list;
+        }
     }
 }

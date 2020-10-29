@@ -96,6 +96,26 @@ namespace Qlphukien.DAO
             con.Close();
             return nv.TenNv;
         }
+        // hàm get name nhân viên from manv
+        public string GetNameNhanVienxxx(string ManvCantim)
+        {
+            NhanVien nv = null;
+            con.Close();
+            con.Open();
+            string sql = "select * from NhanVien where MaNhanVien = @manv";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("manv", ManvCantim);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                nv = new NhanVien(dr["MaNhanVien"].ToString(), dr["HoTenNhanVien"].ToString(), dr["GioiTinh"].ToString(), dr["NgaySinh"].ToString(), dr["DiaChi"].ToString(), dr["SoDienThoai"].ToString(), dr["MatKhau"].ToString(), dr["PhanQuyen"].ToString());
+                break;
+            }
+            con.Close();
+            return nv.TenNv;
+        }
         // hàm check số điện thoại dùng hay chưa
         public NhanVien CheckPhoneExist(string phoneNumber)
         {
